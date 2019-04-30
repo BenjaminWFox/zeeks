@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>Untitled Document</title>
+
+<link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+<script src="scripts/extensions.js"></script>  
+<script src="scripts/model/GameModel.js"></script>
+<script src="scripts/model/LevelModel.js"></script>
+<script src="scripts/view/UiView.js"></script>
+<script src="scripts/view/SliderView.js"></script>
+<script src="scripts/view/BallView.js"></script>
+<script src="scripts/view/LevelView.js"></script>
+<script src="scripts/controller/GameController.js"></script>
+<script>
+
+	var game;
+
+	function init() {
+		game = new GameController();
+		game.create();
+	}
+	
+	init();
+
+</script>
+<link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+</head>
+
+<body>
+  <p style="float:left;">Q/D = Up/Down Left</p>
+  <p style="float:left;clear:left;">P/K = Up/Down Right</p>
+  <p style="float:left;clear:left;">F5 to start over</p>
+<!--
+
+ToDo list for program edits:
+
+Load images in specific order to solve z-index issues
+
+Figure out a new name for the UiView
+
+create view for ball
+
+Abstract drawing code from gameloop to re-use in other places (final animation)
+
+-->
+</body>
+
+</html>
