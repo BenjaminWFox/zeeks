@@ -13,10 +13,10 @@ var launch = function() {
   document.addEventListener("keyup", game.keyUp);
 }
 
-var setButton = function() {
-  document.getElementsByTagName('div')[0].style.width = window.innerWidth + 'px';
-  document.getElementsByTagName('div')[0].style.height = window.innerHeight + 'px';
-}
+// var setButton = function() {
+//   document.getElementsByTagName('div')[0].style.width = window.innerWidth + 'px';
+//   document.getElementsByTagName('div')[0].style.height = window.innerHeight + 'px';
+// }
 
-document.addEventListener("DOMContentLoaded", setButton);
+// document.addEventListener("DOMContentLoaded", setButton);
 // document.getElementsByTagName('button')[0].click();

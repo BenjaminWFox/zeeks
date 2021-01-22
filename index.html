@@ -1,31 +1,61 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    
-    <title>Untitled Document</title>
-    
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-    <script src="scripts/extensions.js"></script>
-    <script src="scripts/classes/UI.js"></script>
-    <script src="scripts/classes/Control.js"></script>
-    <script src="scripts/controller/Launch.js"></script>
-    <script src="scripts/controller/Game.js"></script>
-    <script src="scripts/model/GameModel.js"></script>
-    <script src="scripts/model/LevelModel.js"></script>
-    <script src="scripts/view/SliderView.js"></script>
-    <script src="scripts/view/ControlView.js"></script>
-    <script src="scripts/view/BallView.js"></script>
-    <script src="scripts/view/LevelView.js"></script>
+  <title>Zeke's Peak | JavaScript Proof of Concept</title>
 
-  </head>
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+  <script src="scripts/extensions.js"></script>
+  <script src="scripts/classes/UI.js"></script>
+  <script src="scripts/classes/Control.js"></script>
+  <script src="scripts/controller/Launch.js"></script>
+  <script src="scripts/controller/Game.js"></script>
+  <script src="scripts/model/GameModel.js"></script>
+  <script src="scripts/model/LevelModel.js"></script>
+  <script src="scripts/view/SliderView.js"></script>
+  <script src="scripts/view/ControlView.js"></script>
+  <script src="scripts/view/BallView.js"></script>
+  <script src="scripts/view/LevelView.js"></script>
+</head>
 
 <body>
-  <div>
-    <button onclick="launch();"><span style="display:inline-block; width: 100%;">Launch Game</span> <span style="font-size: 16px;">(Touch & drag with thumbs to move each side. Keyboard: use Q/D & P/K. Click/Touch to start.)</span></button>
+  <div class="main-wrapper">
+    <div class="inner-wrapper">
+      <div>
+        <h1>"Zeke's Peak" / "Ice Cold Beer"</h1>
+      </div>
+      <div>
+        <h3>A proof-of-concept game based on <a href="https://en.wikipedia.org/wiki/Ice_Cold_Beer" target="_blank" rel="nofollow">an arcade game from the 80's</a>.</h3>
+      </div>
+      <div style="text-align: left">
+        <h4>Gameplay:</h4>
+        <ul>
+          <li>Move the bumpers up & down to control the bar, and guide the ball on the bar past the losing holes (red) towards the winning hold (green).</li>
+        </ul>
+      </div>
+      <div style="text-align: left">
+        <h4>Controls:</h4>
+        <ul>
+          <li>Left-bumper: <strong>Q</strong> (up) / <strong>D</strong> (down)</li>
+          <li>Right-bumper: <strong>P</strong> (up) / <strong>K</strong> (down)</li>
+        </ul>
+      </div>
+      <div style="text-align: left">
+        <h4>Note:</h4>
+        <ul>
+          <li>The gameplay is unfinished, so win or lose you'll have to refresh the page to restart.</li>
+        </ul>
+      </div>
+      <div>
+        <button class="launch-button" onclick="launch();">
+          Launch Game
+        </button>
+      </div>
+    </div>
   </div>
 </body>
 
